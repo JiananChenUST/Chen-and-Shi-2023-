@@ -2973,7 +2973,7 @@ ENDIF
 IF( myid.eq.0 )THEN
 
        ! XS: put the file in "run"
-       open(unit=10300,file="/home/jchenfw/jc_workspace/wind_cm1_input_files/base_wind_real.txt")
+       open(unit=10300,file="../run/wind_input.txt")
        read(10300,*)((jc_uv_matrix(i,j),j=1,4),i=1,nk)
        close(10300)
 
